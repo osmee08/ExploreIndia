@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Explore India | About</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: black;
+      color: #002b5c;
+    }
+
+    header {
+      background-color: #043b6c90;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 32px;
+      animation: slideInDown 1s ease-in-out;
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #e3f2fd;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    .about-container {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #8ca1af;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1.5s ease;
+    }
+
+    .about-container h2 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #043b6c90;
+      position: relative;
+      animation: zoomIn 1.2s ease-in-out;
+    }
+
+    .about-container p {
+      font-size: 18px;
+      line-height: 1.8;
+      text-align: justify;
+      color: #0c2d62;
+    }
+
+    footer {
+      background-color: #043b6c90;
+      color: #fff;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 14px;
+      margin-top: 50px;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    }
+
+    /* Animations */
+    @keyframes slideInDown {
+      0% {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.98);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes zoomIn {
+      0% {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .about-container {
+        margin: 20px;
+        padding: 20px;
+      }
+
+      .about-container h2 {
+        font-size: 26px;
+      }
+
+      .about-container p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Explore India</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Explore</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <section class="about-container">
+    <h2>About This Website</h2>
+    <p>
+      Welcome to Explore India — a heartfelt tribute to the vibrant and diverse culture of our incredible nation. This platform is designed to take you on a digital journey through the colors, traditions, festivals, and historical marvels that define India’s true spirit.
+      <br><br>
+      From the folk dances of Rajasthan to the spiritual heritage of Tamil Nadu, we’ve handpicked stories and highlights that reflect India’s unity in diversity. Whether you're a culture lover, a traveler, or simply curious — this is your gateway to India's rich legacy.
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Explore India. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

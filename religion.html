@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Explore India | Religions</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+    }
+
+    header {
+      background-color: #000000;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      color: #3399ff;
+      font-size: 2.5rem;
+      text-shadow: 0 0 10px #3399ff;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #3399ff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+      text-shadow: 0 0 10px #3399ff;
+    }
+
+    .section-title {
+      text-align: center;
+      margin: 40px 0 20px;
+      font-size: 2rem;
+      color: #3399ff;
+    }
+
+    .religion-section {
+      padding: 40px 20px;
+    }
+
+    .religion-block {
+      background-color: #1a1a1a;
+      margin-bottom: 40px;
+      padding: 20px;
+      border-radius: 10px;
+      border-left: 5px solid #3399ff;
+      box-shadow: 0 0 15px rgba(51, 153, 255, 0.2);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .religion-block img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(51, 153, 255, 0.2);
+    }
+
+    .religion-text {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .religion-text h3 {
+      color: #3399ff;
+      margin-bottom: 10px;
+    }
+
+    .religion-text p {
+      color: #ccc;
+      display: none;
+      line-height: 1.6;
+    }
+
+    .toggle-btn {
+      margin-top: 10px;
+      padding: 8px 15px;
+      background-color: #3399ff;
+      border: none;
+      font-weight: bold;
+      color: #000;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .toggle-btn:hover {
+      background-color: #66b3ff;
+    }
+
+    footer {
+      background-color: #000000;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #999;
+      border-top: 1px solid #222;
+    }
+
+    @media (max-width: 768px) {
+      .religion-block {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .religion-text {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Explore India</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Explore</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="section-title">Religions of India</h2>
+    <section class="religion-section fade-in">
+
+      <!-- Hinduism -->
+      <div class="religion-block">
+        <img src="assets/hindu.jpg" alt="Hinduism">
+        <div class="religion-text">
+          <h3>Hinduism</h3>
+          <p>Hinduism is the world's oldest major religion, with deep roots in Indian culture and tradition. It encompasses diverse philosophies, rituals, deities like Vishnu, Shiva, and Devi, and texts like the Vedas and Bhagavad Gita. Festivals like Diwali, Holi, and Navaratri are widely celebrated.</p>
+          <button class="toggle-btn" onclick="toggleText(this)">Read More</button>
+        </div>
+      </div>
+
+      <!-- Islam -->
+      <div class="religion-block">
+        <img src="assets/muslim.jpg" alt="Islam">
+        <div class="religion-text">
+          <h3>Islam</h3>
+          <p>Islam is India’s second-largest religion, with significant contributions to art, architecture, and literature. Followers believe in one God (Allah), follow the teachings of Prophet Muhammad, and celebrate Eid-ul-Fitr and Eid-ul-Adha. The Taj Mahal is a prominent symbol of Islamic architecture.</p>
+          <button class="toggle-btn" onclick="toggleText(this)">Read More</button>
+        </div>
+      </div>
+
+      <!-- Sikhism -->
+      <div class="religion-block">
+        <img src="assets/sikh.jpg" alt="Sikhism">
+        <div class="religion-text">
+          <h3>Sikhism</h3>
+          <p>Founded by Guru Nanak in Punjab, Sikhism emphasizes equality, service, and devotion to one God. The Golden Temple in Amritsar stands as a symbol of peace, unity, and spiritual wisdom. Sikh culture is rich in music, martial arts, and tradition.</p>
+          <button class="toggle-btn" onclick="toggleText(this)">Read More</button>
+        </div>
+      </div>
+
+      <!-- Jainism -->
+      <div class="religion-block">
+        <img src="assets/jain.jpg" alt="Jainism">
+        <div class="religion-text">
+          <h3>Jainism</h3>
+          <p>Jainism teaches non-violence (Ahimsa), truth, and detachment. Founded by Mahavira, it promotes ascetic life and spiritual development through self-discipline. Jain temples like Ranakpur are architectural marvels in India.</p>
+          <button class="toggle-btn" onclick="toggleText(this)">Read More</button>
+        </div>
+      </div>
+
+      <!-- Buddhism -->
+      <div class="religion-block">
+        <img src="assets/buddhism.jpg" alt="Buddhism">
+        <div class="religion-text">
+          <h3>Buddhism</h3>
+          <p>Buddhism, founded by Gautama Buddha in India, teaches the path to enlightenment through meditation, morality, and wisdom. Bodh Gaya, where Buddha attained enlightenment, is a major spiritual center for Buddhists around the world.</p>
+          <button class="toggle-btn" onclick="toggleText(this)">Read More</button>
+        </div>
+
+        <div class="religion-block">
+        <img src="assets/christian.jpg" alt="Christian">
+        <div class="religion-text">
+          <h3>Christianity</h3>
+          <p>Christianity is a monotheistic religion centered on the life and teachings of Jesus of Nazareth. Christians believe Jesus is the Son of God and the Messiah prophesied in the Old Testament. Core beliefs include the Trinity (God as Father, Son, and Holy Spirit) and salvation through faith in Jesus Christ. </p>
+          <button class="toggle-btn" onclick="toggleText(this)">Read More</button>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Explore India. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleText(button) {
+      const paragraph = button.previousElementSibling;
+      paragraph.style.display = (paragraph.style.display === 'block') ? 'none' : 'block';
+      button.textContent = (button.textContent === 'Read More') ? 'Show Less' : 'Read More';
+    }
+  </script>
+
+</body>
+</html>

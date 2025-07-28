@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Explore India | Famous People</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #fff;
+    }
+
+    header {
+      background-color: #000;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      color: #3399ff;
+      font-size: 2.5rem;
+      text-shadow: 0 0 10px #3399ff;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #3399ff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #fff;
+      text-shadow: 0 0 10px #3399ff;
+    }
+
+    .section-title {
+      text-align: center;
+      margin: 40px 0 20px;
+      font-size: 2rem;
+      color: #3399ff;
+    }
+
+    .famous-section {
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .person-card {
+      background-color: #1a1a1a;
+      border: 2px solid #3399ff;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(51, 153, 255, 0.3);
+      max-width: 280px;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+      transition: transform 0.3s ease;
+    }
+
+    .person-card:hover {
+      transform: scale(1.05);
+    }
+
+    .person-card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .person-card h3 {
+      color: #3399ff;
+      margin-bottom: 10px;
+    }
+
+    .person-card p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      display: none;
+      color: #ccc;
+      text-align: left;
+    }
+
+    .toggle-btn {
+      margin-top: 10px;
+      padding: 8px 15px;
+      background-color: #3399ff;
+      border: none;
+      font-weight: bold;
+      color: #000;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .toggle-btn:hover {
+      background-color: #66b3ff;
+    }
+
+    footer {
+      background-color: #000;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #999;
+      border-top: 1px solid #222;
+    }
+
+    @media (max-width: 768px) {
+      .person-card {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Explore India</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Explore</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="section-title">India's Famous People</h2>
+
+    <section class="famous-section fade-in">
+
+      <!-- Repeat blocks start -->
+      <div class="person-card">
+        <img src="assets/SCB.jpg" alt="Subhas Chandra Bose">
+        <h3>Subhas Chandra Bose</h3>
+        <p>A revolutionary freedom fighter who led the Indian National Army (INA). Known for the slogan “Give me blood, and I will give you freedom.” Bose was a symbol of bravery and defiance against British rule. His mysterious disappearance remains unsolved. A national hero deeply respected across generations.</p>
+        <button class="toggle-btn" onclick="toggleText(this)">Read More</button>
+      </div>
+
+      <div class="person-card">
+        <img src="assets/rani.jpg" alt="Rani Lakshmi Bai">
+        <h3>Rani Lakshmi Bai</h3>
+        <p>Warrior queen of Jhansi and a fearless leader in the 1857 revolt. Fought against the British with unmatched courage and pride. Became a symbol of women's valor in Indian history. Died on the battlefield defending her kingdom. Immortalized in poetry and legends of resistance.</p>
+        <button class="toggle-btn" onclick="toggleText(this)">Read More</button>
+      </div>
+
+      <div class="person-card">
+        <img src="assets/ambedkar.jpg" alt="Dr. B. R. Ambedkar">
+        <h3>Dr. B. R. Ambedkar</h3>
+        <p>Architect of the Indian Constitution and a social reformer. Champion of Dalit rights and equality. Fought against caste discrimination throughout his life. First Law Minister of Independent India. A visionary who changed India’s social fabric.</p>
+        <button class="toggle-btn" onclick="toggleText(this)">Read More</button>
+      </div>
+
+      <div class="person-card">
+        <img src="assets/Tagore.jpg" alt="Rabindranath Tagore">
+        <h3>Rabindranath Tagore</h3>
+        <p>India’s first Nobel Laureate in Literature (1913). Author of India's national anthem, poet, and philosopher. Founded Visva-Bharati University for holistic learning. A pioneer of Bengal Renaissance and modern literature. Known for his profound poetry and global impact.</p>
+        <button class="toggle-btn" onclick="toggleText(this)">Read More</button>
+      </div>
+
+      <div class="person-card">
+        <img src="assets/Vivekananda.jpg" alt="Swami Vivekananda">
+        <h3>Swami Vivekananda</h3>
+        <p>Introduced Indian spirituality to the West in 1893. Inspired youth with his message of strength and unity. Disciple of Ramakrishna Paramhansa. Founded the Ramakrishna Mission. His birthday is celebrated as National Youth Day.</p>
+        <button class="toggle-btn" onclick="toggleText(this)">Read More</button>
+      </div>
+
+      <div class="person-card">
+        <img src="assets/apj.jpg" alt="APJ Abdul Kalam">
+        <h3>Dr. APJ Abdul Kalam</h3>
+        <p>Missile Man of India and former President. Played key role in India’s nuclear and space programs. Loved for his humility, wisdom, and vision for youth. Author of "Wings of Fire" and many inspiring books. Remains one of India’s most respected figures.</p>
+        <button class="toggle-btn" onclick="toggleText(this)">Read More</button>
+      </div>
+
+      <div class="person-card">
+        <img src="assets/VK.jpg" alt="Virat Kohli">
+        <h3>Virat Kohli</h3>
+        <p>Former Indian cricket captain and batting legend. Known for aggression, consistency, and fitness. One of the highest run-scorers in international cricket. A youth icon and global sports figure. Continues to inspire millions with his game.</p>
+        <button class="toggle-btn" onclick="toggleText(this)">Read More</button>
+      </div>
+
+      <div class="person-card">
+        <img src="assets/ratan tata.jpg" alt="Ratan Tata">
+        <h3>Ratan Tata</h3>
+        <p>Visionary industrialist and former Chairman of Tata Group. Known for philanthropy and ethical leadership. Played key role in acquiring Jaguar & Land Rover. Launched Tata Nano — the people's car. Respected worldwide for humility and values.</p>
+        <button class="toggle-btn" onclick="toggleText(this)">Read More</button>
+      </div>
+
+      <div class="person-card">
+        <img src="assets/sundarpichhai.jpg" alt="Sundar Pichai">
+        <h3>Sundar Pichai</h3>
+        <p>CEO of Google and Alphabet Inc. Born in Tamil Nadu and studied at IIT Kharagpur. Rose through Google with hard work and vision. Known for calm leadership and innovation. A global symbol of Indian talent in tech.</p>
+        <button class="toggle-btn" onclick="toggleText(this)">Read More</button>
+      </div>
+
+      <div class="person-card">
+        <img src="assets/nadella.jpg" alt="Satya Nadella">
+        <h3>Satya Nadella</h3>
+        <p>CEO of Microsoft and tech industry leader. Transformed Microsoft with cloud-first strategy. Known for empathy, innovation, and leadership. Studied engineering in India and business in the US. Represents Indian excellence in global tech world.</p>
+        <button class="toggle-btn" onclick="toggleText(this)">Read More</button>
+      </div>
+
+      <div class="person-card">
+        <img src="assets/kiran.jpg" alt="Kiran Bedi">
+        <h3>Kiran Bedi</h3>
+        <p>India’s first female IPS officer. Fought corruption and reformed prisons. Known for fearless service and social work. Served as Lieutenant Governor of Puducherry. Continues to inspire women across India.</p>
+        <button class="toggle-btn" onclick="toggleText(this)">Read More</button>
+      </div>
+
+      <div class="person-card">
+        <img src="assets/kalpana.jpg" alt="Kalpana Chawla">
+        <h3>Kalpana Chawla</h3>
+        <p>First Indian-origin woman in space. NASA astronaut who flew on the Space Shuttle Columbia. Lost her life in 2003 during re-entry. Became a symbol of courage and ambition. Inspires girls to dream beyond the sky.</p>
+        <button class="toggle-btn" onclick="toggleText(this)">Read More</button>
+      </div>
+
+      <div class="person-card">
+        <img src="assets/srk.jpg" alt="Shah Rukh Khan">
+        <h3>Shah Rukh Khan (SRK)</h3>
+        <p>Bollywood superstar with global fanbase. Known as the “King of Romance.” Over 80 blockbuster films across genres. Also a producer, philanthropist, and entrepreneur. One of India’s most loved cultural icons.</p>
+        <button class="toggle-btn" onclick="toggleText(this)">Read More</button>
+      </div>
+
+      <div class="person-card">
+        <img src="assets/sania.jpg" alt="Sania Mirza">
+        <h3>Sania Mirza</h3>
+        <p>India’s most successful female tennis player. Winner of multiple Grand Slam titles in doubles. A strong voice for women in sports. Broke stereotypes and inspired millions. Retired as a legend in Indian tennis.</p>
+        <button class="toggle-btn" onclick="toggleText(this)">Read More</button>
+      </div>
+      <!-- Repeat blocks end -->
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Explore India. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleText(button) {
+      const para = button.previousElementSibling;
+      const isShown = para.style.display === 'block';
+      para.style.display = isShown ? 'none' : 'block';
+      button.textContent = isShown ? 'Read More' : 'Show Less';
+    }
+  </script>
+
+</body>
+</html>

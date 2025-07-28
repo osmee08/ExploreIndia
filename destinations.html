@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Explore India | Destinations</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+    }
+
+    header {
+      background-color: #000000;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      color: #3399ff;
+      font-size: 2.5rem;
+      text-shadow: 0 0 10px #3399ff;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #3399ff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+      text-shadow: 0 0 10px #3399ff;
+    }
+
+    .section-title {
+      text-align: center;
+      margin: 40px 0 20px;
+      font-size: 2rem;
+      color: #3399ff;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    .destination-options {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 20px 5%;
+    }
+
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card {
+      background-color: #1f1f1f;
+      border: 2px solid #3399ff;
+      border-radius: 10px;
+      width: 250px;
+      text-align: center;
+      padding: 15px;
+      box-shadow: 0 0 15px rgba(51, 153, 255, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(51, 153, 255, 0.6);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      color: #3399ff;
+      margin: 10px 0 5px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #dddddd;
+    }
+
+    footer {
+      background-color: #000000;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #999;
+      border-top: 1px solid #222;
+      margin-top: 50px;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .card {
+        width: 100%;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 10px;
+      }
+    }
+  </style>
+</head>
+
+  <header>
+    <h1>Explore India</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Explore</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <h2 class="section-title">Explore India's Wonders</h2>
+
+  <section class="destination-options">
+    
+          <a href="culture.html" class="card-link">
+      <div class="card">
+        <img src="assets/Up.jpg" alt="State Culture">
+        <h3>State Culture</h3>
+        <p>Discover rich and diverse cultures across Indian states.</p>
+      </div>
+    </a>
+        
+           <a href="religion.html" class="card-link">
+      <div class="card">
+        <img src="assets/Religion.jpg" alt="Religion">
+        <h3>Religions</h3>
+        <p>Explore spiritual destinations from Hinduism to Buddhism.</p>
+      </div>
+    </a>
+        
+      
+              <a href="famous.html" class="card-link">
+      <div class="card">
+        <img src="assets/SCB.jpg" alt="Famous People">
+        <h3>Famous People</h3>
+        <p>Read about India’s greatest historical and modern icons.</p>
+      </div>
+    </a>
+        
+           <a href="historical.html" class="card-link">
+      <div class="card">
+        <img src="assets/REDFORT.jpg" alt="Historical Sites">
+        <h3>Historical Sites</h3>
+        <p>Witness India's glorious history through heritage sites.</p>
+      </div>
+    </a>
+  </section>
+   
+   
+  <footer>
+    <p>&copy; 2025 Explore India. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
